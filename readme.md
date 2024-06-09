@@ -12,12 +12,36 @@ This is a Streamlit application that uses Microsoft's LIDA and Google's PaLM API
 
 ## Getting Started
 
-1. Clone this repository using `git clone https://github.com/your-username/your-repo-name.git`
-2. Create a virtual environment in python using `python -m venv <venv_name>`
-3. Activate the virtual environment using `<venv_name>\Scripts\activate`
-4. Install the required libraries using `pip install -r requirements.txt`
+1. Clone this repository using
+
+```bash
+git clone https://github.com/viswanathsr-04/aidaa-using-lida.git
+```
+
+2. Create a virtual environment in python using
+
+```bash
+python -m venv <venv_name>
+```
+
+3. Activate the virtual environment using
+
+```bash
+<venv_name>\Scripts\activate
+```
+
+4. Install the required libraries using
+
+```bash
+pip install -r requirements.txt
+```
+
 5. It is important to include your PaLM API service account key from Vertex AI in your local environment as environment variables.
-6. Run the application in the terminal using `streamlit run app.py`
+6. Run the application in the terminal using
+
+```bash
+streamlit run app.py
+```
 
 ## Usage
 
