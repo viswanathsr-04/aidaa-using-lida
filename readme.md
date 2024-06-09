@@ -37,6 +37,14 @@ pip install -r requirements.txt
 ```
 
 5. It is important to include your PaLM API service account key from Vertex AI in your local environment as environment variables.
+
+```bash
+# for PaLM (Vertex AI), setup a gcp project, and get a service account key file
+export PALM_SERVICE_ACCOUNT_KEY_FILE= <path to your service account key file>
+export PALM_PROJECT_ID=<your gcp project id>
+export PALM_PROJECT_LOCATION=<your project location>
+```
+
 6. Run the application in the terminal using
 
 ```bash
