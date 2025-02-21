@@ -100,7 +100,7 @@ from json_to_csv import ldjson_to_csv, json_to_csv
 #                 st.image(img)
 
 
-openai.api_key =  st.secrets["openai"]["api_key"]
+openai.api_key =  st.secrets["openai"]["OPENAI_API_KEY"]
 
 def base64_to_image(base64_string):
     # Decode the base64 string
