@@ -2,7 +2,8 @@ lida
 lida[transformers]
 torch
 streamlit
-os
 pillow
-io
 pandas
+base64
+csv
+json
