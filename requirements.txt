@@ -4,5 +4,3 @@ torch
 streamlit
 pillow
 pandas
-csv
-json
