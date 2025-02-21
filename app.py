@@ -138,7 +138,6 @@ if menu == "Question based Graph":
                 summary = lida.summarize("datafile.csv", summary_method="default", textgen_config=textgen_config)
                 user_query = text_area
                 charts = lida.visualize(summary=summary, goal=user_query, textgen_config=textgen_config)  
-                print(charts[0])
                 image_base64 = charts[0].raster
                 img = base64_to_image(image_base64)
                 st.image(img)
