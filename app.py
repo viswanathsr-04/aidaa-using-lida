@@ -157,16 +157,17 @@ elif menu == "Summarize":
             json_to_csv(path_to_save)
         summary = lida.summarize("datafile.csv", summary_method="default", textgen_config=textgen_config)
         st.write(summary)
-        goals = lida.goals(summary, n=2, textgen_config=textgen_config)
-        for goal in goals:
-            st.write(goal)
-        i = 0
-        library = "seaborn"
-        textgen_config = TextGenerationConfig(n=1, temperature=0.2, use_cache=True)
-        charts = lida.visualize(summary=summary, goal=goals[i], textgen_config=textgen_config, library=library)  
-        img_base64_string = charts[0].raster
-        img = base64_to_image(img_base64_string)
-        st.image(img)
+        # goals = lida.goals(summary, n=2, textgen_config=textgen_config)
+        # for goal in goals:
+        #     st.write(goal)
+        #     break
+        # i = 0
+        # library = "seaborn"
+        # textgen_config = TextGenerationConfig(n=1, temperature=0.2, use_cache=True)
+        # charts = lida.visualize(summary=summary, goal=goals[i], textgen_config=textgen_config, library=library)
+        # img_base64_string = charts[0].raster
+        # img = base64_to_image(img_base64_string)
+        # st.image(img)
         
 
 
